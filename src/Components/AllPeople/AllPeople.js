@@ -10,13 +10,13 @@ class AllPeople extends Component {
         super();
         this.state = {
             persons: [],
-            showCount: false
+            showCount: false,
+            showDuplicateEntries: false
           }
     }
     
     componentDidMount() {
         this.getData();
-        this.setState({isLoading: false})
     }
 
     async getData(){
@@ -28,11 +28,16 @@ class AllPeople extends Component {
         .then (results => {
             const persons = results.data;
             this.setState({persons})
+            console.log(this.state.persons)
         })
     }
     
     handleClick = () => {
         this.setState({ showCount: !this.state.showCount})
+    }
+
+    handleDuplicateEntries = () => {
+        this.setState({ showDuplicateEntries: !this.state.showDuplicateEntries})
     }
         
     render() {
@@ -45,8 +50,13 @@ class AllPeople extends Component {
                     <FrequencyCount 
                         people={this.state.persons.data}
                         handleClick={this.handleClick}
-                        showCount={this.state.showCount}/>
-                    <DuplicatePpl people={this.state.persons.data}/>
+                        showCount={this.state.showCount}
+                    />
+                    <DuplicatePpl 
+                        people={this.state.persons.data}
+                        handleDuplicates={this.handleDuplicateEntries}
+                        showDuplicates={this.state.showDuplicateEntries}
+                    />
                 </div>
             </div>  
         )
