@@ -1,9 +1,15 @@
 import React from "react";
 
 const PersonCard = props => {
+  // cheking if props.people is truthy and if so, mapping over the props
+  //once mapping over the props is completed, putting required information into the card
   return props.people
     ? props.people.map(person => (
-        <div key={person.id} className="row" style={{display: "inline-block"}}>
+        <div
+          key={person.id}
+          className="row"
+          style={{ display: "inline-block" }}
+        >
           <div className="col s12 m12">
             <div className="card blue-grey darken-1">
               <div className="card-content white-text">
@@ -14,14 +20,14 @@ const PersonCard = props => {
                 <p>{person.title}</p>
               </div>
               <div className="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
+                <a>SalesLoft Person Record</a>
               </div>
             </div>
           </div>
         </div>
       ))
+      // otherwise-return null
     : null;
 };
-
+// export the card
 export default PersonCard;
