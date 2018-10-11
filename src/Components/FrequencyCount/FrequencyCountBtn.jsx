@@ -1,8 +1,8 @@
 import React from "react";
-
+// this is a button responsible for firing off frequency count
 const FrequencyCountBtn = props => {
   return (
-    <a
+    <button
       onClick={props.handleClick}
       className="waves-effect waves-light btn"
       style={{
@@ -13,7 +13,7 @@ const FrequencyCountBtn = props => {
       }}
     >
       Frequency Count
-    </a>
+    </button>
   );
 };
 

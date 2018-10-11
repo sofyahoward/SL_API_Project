@@ -2,7 +2,7 @@ import React from "react";
 
 const DuplicatePplBtn = props => {
   return (
-    <a
+    <button
       onClick={props.handleDuplicates}
       className="waves-effect waves-light btn"
       style={{
@@ -13,7 +13,7 @@ const DuplicatePplBtn = props => {
       }}
     >
       Duplicate People
-    </a>
+    </button>
   );
 };
 
