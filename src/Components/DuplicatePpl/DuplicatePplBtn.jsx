@@ -4,7 +4,7 @@ const DuplicatePplBtn = props => {
   return (
     <button
       onClick={props.handleDuplicates}
-      className="waves-effect waves-light btn"
+      className="waves-effect amber accent-4 btn"
       style={{
         display: "inline-block",
         width: "25%",

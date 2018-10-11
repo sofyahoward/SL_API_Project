@@ -11,7 +11,7 @@ const PersonCard = props => {
           style={{ display: "inline-block" }}
         >
           <div className="col s12 m12">
-            <div className="card blue-grey darken-1">
+            <div className="card grey darken-1">
               <div className="card-content white-text">
                 <span className="card-title">
                   {person.first_name} {person.last_name}

@@ -34,7 +34,7 @@ const DuplicatePpl = props => {
       <div>
         {props.showDuplicates && (
           <div style={{ margin: "15%", marginTop: "5%", marginBottom: "5%" }}>
-            <table className="striped centered responsive-table">
+            <table className="striped centered responsive-table white-text">
               <thead>
                 <tr>
                   <th>Emails</th>

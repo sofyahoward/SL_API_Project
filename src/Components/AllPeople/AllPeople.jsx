@@ -48,7 +48,7 @@ class AllPeople extends Component {
   render() {
     return (
       <div>
-        <div style={{ marginLeft: "15%" }}>
+        <div>
           <PersonCard people={this.state.persons.data} />
         </div>
         <div>

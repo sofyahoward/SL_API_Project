@@ -30,7 +30,7 @@ const FrequencyCount = props => {
       <div>
         {props.showCount && (
           <div style={{ margin: "15%", marginTop: "5%", marginBottom: "5%" }}>
-            <table className="striped centered responsive-table">
+            <table className="striped centered responsive-table white-text">
               <thead>
                 <tr>
                   <th>Character</th>
@@ -55,7 +55,7 @@ const FrequencyCount = props => {
     return (
       // if props are still undefined, return loading component
       <div style={{ marginLeft: "45%", marginTop: "25%" }}>
-        <Loading />;
+        <Loading />
       </div>
     );
   }

@@ -4,7 +4,7 @@ const FrequencyCountBtn = props => {
   return (
     <button
       onClick={props.handleClick}
-      className="waves-effect waves-light btn"
+      className="waves-effect waves-light amber accent-4 btn"
       style={{
         display: "inline-block",
         width: "25%",
